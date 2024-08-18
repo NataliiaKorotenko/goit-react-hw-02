@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './App.module.css';
+import styles from './App.module.css';
 import Description from './Description/Description';
 import Feedback from './Feedback/Feedback';
 import Options from './Options/Options';
@@ -40,7 +40,7 @@ function App() {
   const positiveFeedback = totalFeedback > 0 ? Math.round((feedbackState.good / totalFeedback) * 100) : 0;
 
   return (
-    <div className="container">
+    <div className={styles.cont}>
       <Description />
       <Options updateFeedback={updateFeedback} totalFeedback={totalFeedback} />
       {totalFeedback > 0 ? (
