@@ -1,0 +1,16 @@
+.options {
+    display: flex;
+    gap: 10px;
+  }
+  .optionsBtn {
+    min-width: 100px;
+    background-color: #c9fb65;
+    border-radius: 8px;
+    border-radius: #071402;
+    
+  }
+  .optionsBtn:hover,
+  .optionsBtn:focus {
+    background-color: #74c158;
+    outline: transparent;
+  }
